@@ -1,0 +1,147 @@
+// Place all the styles related to the launches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.columns{
+	padding: 0px;
+	margin: 0px;
+}
+.rows{
+	padding: 0px;
+	margin: 0px;
+}
+.intropage{
+// 	.spinner {
+// 			width: 70px;
+// 			height: 70px;
+// 			background-color: #111;
+
+// 			margin: 25% auto;
+// 			-webkit-animation: rotateplane 1.2s infinite ease-in-out;
+// 			-moz-animation: rotateplane 1.2s infinite ease-in-out;
+
+// 			animation: rotateplane 1.2s infinite ease-in-out;
+// 		}
+
+// 		@-webkit-keyframes rotateplane {
+// 			0% {
+// 				-webkit-transform:perspective(120px)
+// 			}
+// 			50% {
+// 				-webkit-transform:perspective(120px) rotateY(180deg)
+// 			}
+// 			100%{
+// 				-webkit-transform:perspective(120px) rotateX(180deg) rotateY(180deg)
+// 			}
+// 		}
+
+// 		@keyframes rotateplane{
+// 			0%{
+// 				transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+// 				-webkit-transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+// 			}
+// 			50%{
+// 				transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+// 				-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(0deg);
+// 			}
+// 			100%{
+// 				transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+// 				-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+// 			}
+// 		}
+	.intro_image{
+  		width: 100%;
+  		height: 750px;
+		background:image-url("cover.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		filter: grayscale(75%) contrast(100%) blur(0.8px) brightness(50%);
+  		-webkit-filter: grayscale(75%) contrast(100%) blur(0.8px) brightness(50%);
+  		-moz-filter: grayscale(75%) contrast(100%) blur(0.8px) brightness(50%);
+		}
+	.launch_content{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0%;
+		left: 0%;
+		.logo{
+			position: relative;
+			left: 47%;
+			top: 5%;
+	  		width: 12%;
+			height: 12%;
+			margin-bottom: 200px;
+			background:image-url("stutern_logo.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.intro_text{
+			color: white;
+			text-align: center;
+			p{
+				padding: 0;
+				margin: 0;
+				font-weight: normal;
+
+			}
+			.text_head{
+				p{
+				font-size: 30px;
+				line-height: rem-calc(4em);
+				}
+			}
+			.text_body{
+				p{
+				font-size: 14px;
+				// line-height: 500px;
+				}
+			}
+			.text_end{
+				margin-bottom: 75px;
+				p{
+				// line-height: 500px;
+				font-size: 35px;
+				}
+			}
+			#apply_button{
+				margin-bottom: 60px;
+				clear: both;
+					// @media #{$medium-only}{
+					// 	margin: rem-calc(5px 0px 0px 0px);
+					// 	float: left;
+					// }
+					// @media #{$small-only}{
+					// 	margin: rem-calc(5px 0px 0px 0px);
+					// 	float: left;
+					// }
+				.button{padding: rem-calc(10px 10px);}
+				a{	
+					color: white;
+					background-color: #0ee6de;
+					padding: 5px  10px;
+					border-radius: 2px;
+					// font-size: $varfontsize_h2;
+					// @media #{$medium-only}{
+					// 	font-size: $varfontsize_h4;
+					// }
+					// @media #{$small-only}{
+					// 	font-size: $varfontsize_h3;
+					// }
+				}
+				a:hover{
+					background-color: #0ee6de + #111111;
+
+				}
+			}
+		}
+		// .blog{
+		// 	margin: 0 5%;
+		// 	background-color: white;
+		// 	border-radius: 3px;
+		// 	width: 90%;
+		// 	height: 150px;
+		// }
+	}
+	
+}
