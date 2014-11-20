@@ -1,24 +1,24 @@
-<div class = "intropage">
-	<!-- <div class = "spinner"></div> -->
-	<div class = 'intro_image'>
-	</div>
-	<div class = 'launch_content'>
-		<div class ='logo'>
-		</div>
+<div class='launch'>
+	<div class="launch-main">
+		<div class='launch-content' id='launch-content'>
+			<div class = 'top-content'>
+				<div class ='logo-content'></div>
+				<div class='text-content'>
+					<div class = 'text_body'><p><%= 'A Platform for Interns & Employers to Connect'.upcase %></p></div>
+					<div class = 'text_end'><p><%= 'We are Launching Soon'.upcase %></p></div>
+					
+				</div>
+			</div>
+			<div class = 'down-content'>
+			<!-- js -->
+					<a href="popup.html.erb" onclick="return pop('popup.html.erb')">Link to popup</a>
 
-		<div class="intro_text">
-			<!-- <div class = 'text_head'><p><%= 'Stutern'.upcase %></p></div> -->
-			<div class = 'text_body'><p><%= 'A Platform for Interns & Employers to Connect'.upcase %></p></div>
-			<div class = 'text_end'><p><%= 'We are Launching Soon'.upcase %></p></div>
-
-			<div id="apply_button">
-				<%= link_to "Sign Up".upcase,("http://stutern.herokuapp.com/users/sign_up?user_type=student"), class:"button radius" %>
+					<div id="apply_button">
+						<%= link_to "Sign Up".upcase,("popup.html.erb"), class:"button radius" %>
+					<!-- <%= link_to "Sign Up".upcase,("http://stutern.herokuapp.com/users/sign_up?user_type=student"), class:"button radius" %> -->
+					</div>
 			</div>
 		</div>
-		<div class = 'blog'>
-		<div class ='logo'></div>
-		</div>
 	</div>
-
 </div>
 <!-- <i class = 'image'><%# image_tag "https://s3-us-west-2.amazonaws.com/stutern/cover.png" %></i> -->
